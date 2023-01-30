@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen -  Forest Landing Page | Nothing4us</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Forest Landing Page | Nothing4us </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <title>Parallax Scrolling Website</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Forest</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Explore</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Parallax scrolling is a web design method in which background graphics move slower than foreground images, providing the illusion of depth and immersion. This impact has the potential to make websites more engaging and visually appealing.
+          Parallax scrolling can be performed using a variety of approaches such as JavaScript, CSS, and HTML. There are also various libraries and plugins available to aid in the creation of parallax scrolling effects.
+          scrolling is commonly used to create appealing hero sections, add depth to flat designs, and improve storytelling in websites and landing pages.
+          <br>When employing parallax scrolling, keep the user experience and performance in mind. Parallax effects can cause slowness on mobile devices and slow down websites, so use them sparingly and optimise for performance.
+          Overall, parallax scrolling is an effective tool for developing dynamic and visually appealing websites, but it must be used with caution to provide a favourable user experience.
+          The term "parallax" is defined in astronomy as the apparent displacement or difference in apparent direction of anything when viewed from two separate vantage points.
+
+          Programmers in the area of digital graphics can achieve parallax scrolling in a variety of ways. One method is to create various layers that move at varying speeds when viewed in a browser or other viewer.<br> Alternatively, programmers can generate "sprites," or independent sections of an image, which are frequently in the shape of avatars or characters that move around a digital scene. Another approach that has been useful in many video game projects and other animations is the cycling of repeated patterns, and programmers can also modify the display of raster images or bitmapped visuals to generate parallax scrolling.
+          
+          In general, developers must consider a variety of factors in order to build a parallax scrolling effect that is both authentic and versatile. For example, one way is creating image layers through attribution, then setting a scroll function and speed to each item, and finally implementing any HTML or CSS modifications for different browsers or viewers. As with other types of visual projects, including the latest syntax of these resources is critical to create a functional parallax scrolling technique.</div>
+    
+    
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
